@@ -2,10 +2,16 @@
   <h1 align="center">material-design demo theme for Storyblok</h1>
   <p align="center">A <a href="https://www.storyblok.com" target="_blank">Storyblok</a> theme with liquid and our render service to simply start your website with us.</p>
 </p>
-<br><br>
+<br>
 
 ## Visit our demo here:
 https://fd28fc23.me.storyblok.com/
+
+## Test the Storyblok Editor with the components of this project
+https://app.storyblok.com   
+User: material@dominikangerer.com   
+Password: material-theme   
+(please be nice)
 
 ## What is a storyblok theme
 If you want a hosting with our Rendering Service so you won't have to setup a server on your own you can directly choose from one of our themes.
