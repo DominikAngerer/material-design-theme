@@ -8,9 +8,9 @@
 https://fd28fc23.me.storyblok.com/
 
 ## Test the Storyblok Editor with the components of this project
-https://app.storyblok.com
-User: material@dominikangerer.com
-Password: material-theme
+https://app.storyblok.com   
+User: material@dominikangerer.com   
+Password: material-theme   
 (please be nice)
 
 ## What is a storyblok theme
