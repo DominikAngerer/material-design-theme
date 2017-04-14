@@ -25,14 +25,6 @@ and choose your theme. You can of course simply `download` or `clone` this repos
 git clone https://github.com/storyblok/material-design-theme
 ```
 
-## Configuration
-In the `webapp/config.php` all you need to change is the `STORYBLOK_CONFIGURATION` - by adding your space information. [What is a Space?](https://www.storyblok.com/docs/terminology/space):
-
-```
-$app['config.home']             = 'home'; #change this to your home story slug
-$app['storyblok.privateToken']  = 'Iw3XKcJb6MwkdZEwoQ9BCQtt'; #change this to your private key.
-```
-
 ## Start your local environment
 
 Make sure [npm](https://www.npmjs.com/) is installed:
