@@ -1,6 +1,11 @@
 {
-  "name": "creator-theme",
-  "description": "creator-theme for storyblok",
+  "name": "material-design-theme",
+  "description": "material-design-theme for storyblok",
+  "author": {
+    "email": "dominikangerer1@gmail.com",
+    "name":"Dominik Angerer",
+    "url": "https://www.dominikangerer.com"
+  },
   "private": false,
   "version": "0.0.0",
   "devDependencies": {
