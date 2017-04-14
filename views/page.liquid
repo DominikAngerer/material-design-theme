@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storyblok - {{ story.name }}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <link rel="stylesheet" href="{{ 'assets/theme.css' | asset_url }}">
+</head>
+<body class="mdl-landing mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    </div>
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      <h3>{{story.content.app_name}}</h3>
+    </div>
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    </div>
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+      <a href="{{story.content.app_link|url}}" target="_blank" class="mdl-layout__tab">Get {{story.content.app_name}}</a>
+      <a href="https://www.storyblok.com" target="_blank" class="mdl-layout__tab">to storyblok</a>
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+        <i class="material-icons" role="presentation">launch</i>
+        <span class="visuallyhidden">Add</span>
+      </button>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+
+    {% include story.content.component with blok: story.content, title: story.name, date: story.created_at %}
+
+  </main>
+  {% include 'mini_footer' with blok: story.content, title: story.name, date: story.created_at %}
+</div>
+
+
+<script type="text/javascript" src="{{ 'assets/js/scripts.js' | asset_url }}"></script>
+<script type="text/javascript" src="//app.storyblok.com/storyblok-latest.js"></script>
+<script type="text/javascript">
+
+  storyblok.init({
+    accessToken: '{{ public_token }}'
+  });
+
+  storyblok.on('change', function() {
+    location.reload(true);
+  });
+
+  storyblok.pingEditor(function() {
+    if (storyblok.inEditor) {
+      storyblok.enterEditmode();
+    }
+  });
+
+</script>
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>

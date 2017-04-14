@@ -1,0 +1,97 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.mdl-landing .mdl-layout__header-row {
+  padding-left: 40px;
+}
+.mdl-landing .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
+  font-size: inherit;
+}
+.mdl-landing .mdl-layout__tab-bar-button {
+  display: none;
+}
+.mdl-landing .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
+  display: none;
+}
+.mdl-landing .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar,
+.mdl-landing .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar-container {
+  overflow: visible;
+}
+.mdl-landing .mdl-layout__tab-bar-container {
+  height: 64px;
+}
+.mdl-landing .mdl-layout__tab-bar {
+  padding: 0;
+  padding-left: 16px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+.mdl-landing .mdl-layout__tab-bar .mdl-layout__tab {
+  height: 64px;
+  line-height: 64px;
+}
+.mdl-landing .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
+  background-color: white;
+  height: 4px;
+}
+.mdl-landing main > .mdl-layout__tab-panel {
+  padding: 8px;
+  padding-top: 48px;
+}
+.mdl-landing #add {
+  position: absolute;
+  right: 40px;
+  top: 36px;
+  z-index: 999;
+}
+
+.mdl-landing #features section.section--center {
+  max-width: 620px;
+}
+.mdl-landing section > header > .material-icons {
+  font-size: 3rem;
+}
+.mdl-landing .mdl-card .mdl-card__supporting-text > h3:first-child {
+  margin-bottom: 24px;
+}
+.mdl-landing .mdl-layout__tab-panel:not(#overview) {
+  background-color: white;
+}
+.mdl-landing .mdl-menu__container {
+  z-index: 99;
+}
+
+.mdl-landing .mdl-layout__content {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mdl-landing .mdl-card {
+  width: auto;
+  padding: 20px;
+}
+.mdl-landing .mdl-layout__container {
+  position: initial;
+  width: auto;
+  height: auto;
+}

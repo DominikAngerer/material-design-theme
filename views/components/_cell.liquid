@@ -1,0 +1,6 @@
+{{ blok._editable }}
+<div class="mdl-cell mdl-cell--{{blok.width}}-col">
+  {% for item in blok.body %}
+    {% include item.component with blok: item %}
+  {% endfor %}
+</div>
